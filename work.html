@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work - Banko Denis #</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Banko Denis #</a>
+        <a href="404.html" class="btn-fake">Ez egy Gomb...</a>
+        <div class="menu-trigger" onclick="toggleMenu()">+</div>
+    </header>
+
+    <nav id="main-menu">
+        <div class="close-menu" onclick="toggleMenu()">×</div>
+        <ul class="menu-items">
+            <li><a href="work.html" style="color: #ff0000;">01 WORK</a></li>
+            <li><a href="bio.html">02 BIOGRAPHY</a></li>
+            <li><a href="contact.html">03 CONTAKT</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <div>
+                <h1>ITT TALÁLSZ EGY CSOMÓ <br> WORKS-OT NÉZELŐDJED MEGFELE</h1>
+                
+                <div style="font-family: monospace; margin-bottom: 40px; font-size: 14px;">
+                    (A) <br>
+                    - Savremena galerija Subotica <br>
+                    https://sgsu.org.rs <br><br>
+                    Cím: Kirakat II. <br>
+                    Méret: 57 x 65 cm <br>
+                    Technika: Giclée print
+                </div>
+            </div>
+            
+            <div style="font-size: 120px; font-weight: bold; line-height: 0.8; text-align: right; user-select: none;">
+                0<br>1
+            </div>
+        </div>
+
+        <div class="work-grid">
+            
+            <script>
+                // Egy kis JS-el legeneráljuk a sok négyzetet, hogy ne legyen 500 sor a HTML
+                const works = [
+                    {id: 1, title: 'Safe Place', year: '2024', tag: '(A)'},
+                    {id: 2, title: 'Halott legyek?', year: '2025', tag: '(B)'},
+                    {id: 3, title: 'bab 1', year: '2024', tag: '(C)'},
+                    {id: 4, title: 'Untitled', year: '2023', tag: '(A)'},
+                    {id: 5, title: 'Giclée Print', year: '2024', tag: '(B)'},
+                    {id: 6, title: 'Kirakat II.', year: '2024', tag: '(C)'},
+                    {id: 7, title: 'Vegytech', year: '2025', tag: '(A)'},
+                    {id: 8, title: 'Empty Space', year: '2024', tag: '(B)'},
+                    {id: 9, title: 'Digital Noise', year: '2023', tag: '(C)'},
+                    {id: 10, title: 'Black & White', year: '2024', tag: '(A)'},
+                    {id: 11, title: 'Process', year: '2025', tag: '(B)'},
+                    {id: 12, title: 'Memory', year: '2024', tag: '(C)'}
+                ];
+
+                works.forEach(w => {
+                    document.write(`
+                        <a href="project.html" class="work-item">
+                            <div class="image-container">
+                                <img src="https://picsum.photos/600/600?grayscale&random=${w.id}" alt="${w.title}">
+                            </div>
+                            <div class="work-info">
+                                ${w.tag} <br>
+                                Cím: ${w.title} <br>
+                                Technika: Vegyes technika <br>
+                                ${w.year}
+                            </div>
+                        </a>
+                    `);
+                });
+            </script>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="logo">Banko Denis #</div>
+        <div class="footer-links">
+            <a href="#">Facebook</a>
+            <a href="https://instagram.com/bankodenisz">Instagram</a>
+            <a href="#">Behance</a>
+            <a href="mailto:bdenis999@gmail.com">E-mail</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('main-menu').classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
