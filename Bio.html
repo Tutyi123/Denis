@@ -2,34 +2,79 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <title>Biography - Banko Denis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography - Banko Denis #</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
         <a href="index.html" class="logo">Banko Denis #</a>
+        <a href="404.html" class="btn-fake">Ez egy Gomb...</a>
         <div class="menu-trigger" onclick="toggleMenu()">+</div>
     </header>
 
+    <nav id="main-menu">
+        <div class="close-menu" onclick="toggleMenu()">×</div>
+        <ul class="menu-items">
+            <li><a href="work.html">01 WORK</a></li>
+            <li><a href="bio.html" style="color: #ff0000;">02 BIOGRAPHY</a></li>
+            <li><a href="contact.html">03 CONTAKT</a></li>
+        </ul>
+    </nav>
+
     <div class="container">
-        <h1>EZ ÍLYEN FELESLEGES FELVÁGÓS RÉSZ DE AZÉRT OLVASD EL...</h1>
-        <div class="bio-content">
-            <h3>Életrajz:</h3>
-            <p>Elérhetőségek: Bankó Denisz 1999, Újvidék, Szerbia<br>bdenis999@gmail.com</p>
-            
-            <h3>Bemutatkozás:</h3>
-            <p>Üdvözöllek az oldalamon! Bankó Denisz vagyok, Pécsett élő és alkotó képzőművész. Munkáim középpontjában a kollázs, a grafika és a különböző médiumok kísérleti vegyítése áll...</p>
-            
-            <h3>Tanulmányok:</h3>
-            <ul>
-                <li>Pécsi Tudományegyetem, Művészeti Kar - Grafikus művész szak (2022 - jelenleg)</li>
-                <li>SZÁMALK-Szalézi Technikum - Grafikus szak (2020-2022)</li>
-            </ul>
-            
-            <h3>Kiállítások (válogatás):</h3>
-            <p>2024 - Tipózóna 5 - Human Touch, Pécs<br>2024 - 8. Székelyföldi Grafikai Biennálé</p>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <div>
+                <h1>EZ ÍLYEN FELESLEGES FELVÁGÓS RÉSZ DE AZÉRT OLVASD EL...</h1>
+                <div style="font-family: monospace; margin-bottom: 20px;">
+                    (A) - Jó lesz eső, nem olyan hosszú <br>
+                    Cím: Életrajz | Méret: 1920 x 1080 pixel | Technika: Hát ezt kitalálja mindenki
+                </div>
+            </div>
+            <div style="font-size: 120px; font-weight: bold; line-height: 0.8; text-align: right;">0<br>2</div>
+        </div>
+
+        <div class="bio-content" style="font-family: monospace; max-width: 900px; margin-top: 40px; line-height: 1.6;">
+            <section>
+                <h3>Életrajz:</h3>
+                <p>Elérhetőségek:<br>Bankó Denisz 1999, Újvidék, Szerbia<br>bdenis999@gmail.com<br>Instagram: bankodenisz</p>
+            </section>
+
+            <section style="margin-top: 30px;">
+                <h3>Bemutatkozás:</h3>
+                <p>Üdvözöllek az oldalamon! [Bankó Denisz] vagyok, Pécsett élő és alkotó képzőművész. Munkáim középpontjában a kollázs, a grafika és a különböző médiumok kísérleti vegyítése áll. Az anyaghasználatban és tartalmi megközelítésben egyaránt keresem a feszültség és egyensúly közti határelemeket – gyakran társadalmi, identitásbeli vagy személyes témákat dolgozva fel.</p>
+            </section>
+
+            <section style="margin-top: 30px;">
+                <h3>Tanulmányok:</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li>• Pécsi Tudományegyetem, Művészeti Kar - Grafikus művész szak (2022 - jelenleg is)</li>
+                    <li>• SZÁMALK-Szalézi Technikum - Grafikus szak (2020 - 2022)</li>
+                    <li>• Škola za dizajn „Bogdan Šuput” - Képzőművészeti technikus szak (2015 - 2018)</li>
+                </ul>
+            </section>
+
+            <section style="margin-top: 30px;">
+                <h3>Kiállítások (válogatás):</h3>
+                <p>
+                    • 2024 - Tipózóna 5 - Human Touch, Pécs<br>
+                    • 2024 - 8. Székelyföldi Grafikai Biennálé, Sepsiszentgyörgy<br>
+                    • 2016-2024 - Temerini Alkotó Közösség zárókiállításai
+                </p>
+            </section>
         </div>
     </div>
+
+    <footer>
+        <div class="logo">Banko Denis #</div>
+        <div class="footer-links">
+            <a href="#">Facebook</a>
+            <a href="https://instagram.com/bankodenisz">Instagram</a>
+            <a href="#">Behance</a>
+            <a href="mailto:bdenis999@gmail.com">E-mail</a>
+        </div>
+    </footer>
 
     <script>function toggleMenu() { document.getElementById('main-menu').classList.toggle('active'); }</script>
 </body>
