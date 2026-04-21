@@ -24,22 +24,25 @@
     </nav>
 
     <div class="container">
-        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
-            <div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 40px;">
+            <div style="max-width: 600px;">
                 <h1>ITT INFORMÁLÓDHATSZ MERRE VAGYOK, KERESS BIZALOMMAL...</h1>
-                <div style="font-family: monospace; margin-bottom: 20px;">
+                <div style="font-family: monospace; font-size: 14px; margin-top: 10px;">
                     (A) <br>
                     - Savremena galerija Subotica <br>
                     Cím: Kirakat II. | Méret: 57 x 65 cm | Technika: Giclée print
                 </div>
             </div>
-            <div style="font-size: 120px; font-weight: bold; line-height: 0.8; text-align: right;">0<br>3</div>
+            <div style="font-size: 120px; font-weight: bold; line-height: 0.8; text-align: right; user-select: none;">
+                0<br>3
+            </div>
         </div>
 
-        <div style="display: flex; gap: 50px; margin-top: 40px; flex-wrap: wrap;">
-            <div class="contact-content" style="flex: 1; min-width: 300px;">
-                <h2 style="font-size: 40px; margin-bottom: 20px;">CONTACT</h2>
-                <p style="font-family: monospace; line-height: 1.8;">
+        <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 60px; align-items: start; margin-top: 20px;">
+            
+            <div class="contact-info" style="font-family: monospace; line-height: 1.8;">
+                <h2 style="font-family: 'Helvetica Neue', sans-serif; font-size: 32px; margin-bottom: 25px;">CONTACT</h2>
+                <p>
                     ÉN Kft<br>
                     7632 Rácos városi út 99<br>
                     PÉCS<br><br>
@@ -49,19 +52,17 @@
                     Mobil: 06706494243
                 </p>
                 
-                <div style="margin-top: 40px; font-family: monospace; font-size: 14px;">
+                <div style="margin-top: 50px; border-top: 1px solid #000; padding-top: 20px; font-size: 13px;">
                     <strong>(.i.)</strong><br>
                     Embereket felveszünk<br>
                     Dolgozz éhbérért
                 </div>
             </div>
 
-            <div style="flex: 2; min-width: 300px;">
-                <div class="map-placeholder">
-                   <img src="https://www.google.com/maps/vt/pb=!1m4!1m3!1i14!2i8945!3i5687!2m3!1e0!2sm!3i605063514!3m17!2sen!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m3!1e12!2m1!1e5!12m3!1e92!2m1!1e1!4e0!5m1!5f2" 
-                        style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.2);">
-                </div>
+            <div class="image-container" style="aspect-ratio: 4 / 3; width: 100%; border: 1px solid #000;">
+                <img src="https://picsum.photos/id/352/1000/800?grayscale" alt="Pécs street view" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
+
         </div>
     </div>
 
@@ -75,6 +76,11 @@
         </div>
     </footer>
 
-    <script>function toggleMenu() { document.getElementById('main-menu').classList.toggle('active'); }</script>
+    <script>
+        function toggleMenu() {
+            document.getElementById('main-menu').classList.toggle('active');
+        }
+    </script>
+
 </body>
 </html>
