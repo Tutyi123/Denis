@@ -1,0 +1,212 @@
+/* Alapbeállítások */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --accent-color: #ff0000;
+    --gray-bg: #d3d3d3;
+    --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-mono: 'Courier New', Courier, monospace;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.4;
+}
+
+/* Fejléc */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 100;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.btn-fake {
+    border: 1px solid #ccc;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+    background: #f9f9f9;
+}
+
+.menu-trigger {
+    font-size: 32px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+/* Navigációs Menü (Overlay) */
+#main-menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(211, 211, 211, 0.95);
+    backdrop-filter: blur(10px);
+    transition: 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#main-menu.active {
+    top: 0;
+}
+
+.menu-items {
+    list-style: none;
+    text-align: left;
+}
+
+.menu-items li {
+    margin: 20px 0;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.menu-items a:hover {
+    color: var(--accent-color);
+}
+
+.close-menu {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* Tartalom elrendezés */
+.container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+/* Kép rács (Work & Home) */
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.work-item {
+    text-decoration: none;
+    color: black;
+}
+
+.image-container {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background: #eee;
+    margin-bottom: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+.work-item:hover img {
+    filter: blur(5px) grayscale(1);
+}
+
+.work-info {
+    font-family: var(--font-mono);
+    font-size: 12px;
+}
+
+/* Hero kép a főoldalon */
+.hero-image {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    margin: 20px 0;
+}
+
+/* Lábléc */
+footer {
+    background: var(--gray-bg);
+    padding: 40px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+/* 404 Oldal */
+.error-page {
+    background: black;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.error-page h1 { font-size: 120px; margin: 0; }
+.error-page a { color: white; margin-top: 20px; }
+
+/* Bio & Contact specifikus */
+.bio-content, .contact-content {
+    max-width: 800px;
+    font-family: var(--font-mono);
+}
+
+.map-placeholder {
+    width: 100%;
+    height: 300px;
+    background: #eee;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
