@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Banko Denis #</a>
+        <div class="menu-trigger" onclick="toggleMenu()">+</div>
+    </header>
+
+    <div class="container">
+        <h1>MIVEL RÁKATTANTÁL A KÉPRE MOST OLVASHATSZ EGY KICSIT RÓLA...</h1>
+        
+        <div style="display: flex; gap: 40px; align-items: flex-start; margin-bottom: 50px;">
+            <div style="flex: 1;">
+                <img src="https://picsum.photos/800/600?grayscale&random=10" style="width: 100%;">
+            </div>
+            <div style="flex: 1; font-family: monospace;">
+                <h2>EZ egy dolog</h2>
+                <p>(A) Cím: Kirakat II. <br> Technika: Giclée print</p>
+                <p>A munka leírása: Ez a kompozíció a fragmentált és roncsolt képi világot mutatja be. A rétegek egymásra épülnek, tükrözve a digitális és manuális technikák találkozását...</p>
+            </div>
+        </div>
+
+        <div style="display: flex; gap: 40px; flex-direction: row-reverse; align-items: flex-start;">
+            <div style="flex: 1;">
+                <img src="https://picsum.photos/800/600?grayscale&random=11" style="width: 100%;">
+            </div>
+            <div style="flex: 1; font-family: monospace;">
+                <p>A Pécsi Tudományegyetem Művészeti Kar jelenlegi hallgatóinak kiállítása. Kurátorok: Dr. Varga Tünde és Jevremov Miroslav.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>function toggleMenu() { document.getElementById('main-menu').classList.toggle('active'); }</script>
+</body>
+</html>
