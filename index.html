@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Banko Denis #</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Banko Denis #</a>
+        <a href="404.html" class="btn-fake">Ez egy Gomb...</a>
+        <div class="menu-trigger" onclick="toggleMenu()">+</div>
+    </header>
+
+    <nav id="main-menu">
+        <div class="close-menu" onclick="toggleMenu()">×</div>
+        <ul class="menu-items">
+            <li><a href="work.html">01 WORK</a></li>
+            <li><a href="bio.html">02 BIOGRAPHY</a></li>
+            <li><a href="contact.html">03 CONTAKT</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>EZ EGY DOLOG MEG LESZ MÁG TÖBB IS HA SZKROLLOLOL...</h1>
+        
+        <div style="font-family: monospace; margin-bottom: 20px;">
+            (A) - Savremena galerija Subotica <br>
+            Cím: Kirakat II. | Méret: 57 x 65 cm | Technika: Giclée print
+        </div>
+
+        <img src="https://picsum.photos/1200/600?grayscale" alt="Munka közben" class="hero-image">
+
+        <h2>EZEK DOLOGOK <br> <small>NEM OLYAN RÉGRŐL:</small></h2>
+
+        <div class="work-grid">
+            <a href="project.html" class="work-item">
+                <div class="image-container"><img src="https://picsum.photos/500/500?grayscale&random=1"></div>
+                <div class="work-info">
+                    (A) Cím: Safe Place <br> Méret: 100x70 cm <br> Technika: Vegyes technika | 2024
+                </div>
+            </a>
+            <a href="project.html" class="work-item">
+                <div class="image-container"><img src="https://picsum.photos/500/500?grayscale&random=2"></div>
+                <div class="work-info">
+                    (B) Cím: Halott legyek? <br> Méret: 100x70 cm <br> Technika: Vegyes technika | 2025
+                </div>
+            </a>
+            <a href="project.html" class="work-item">
+                <div class="image-container"><img src="https://picsum.photos/500/500?grayscale&random=3"></div>
+                <div class="work-info">
+                    (C) Cím: Bab 1 <br> Méret: 57x65 cm <br> Technika: Vegyes technika | 2024
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logo">Banko Denis #</div>
+        <div class="footer-links">
+            <a href="#">Facebook</a>
+            <a href="https://instagram.com/bankodenisz">Instagram</a>
+            <a href="#">Behance</a>
+            <a href="mailto:bdenis999@gmail.com">Email</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('main-menu').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
